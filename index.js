@@ -196,14 +196,14 @@ S.UI = (function () {
                 time = t;
                 S.Shape.switchShape(S.ShapeBuilder.letter(time));
               }
-            }, 1000);
+            }, 500);
           }
           break;
 
         default:
           S.Shape.switchShape(S.ShapeBuilder.letter(current[0] === cmd ? 'What?' : current));
       }
-    }, 2000, sequence.length);
+    }, 1000, sequence.length);
   }
 
   function checkInputWidth(e) {
